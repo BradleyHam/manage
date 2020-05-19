@@ -1,0 +1,24 @@
+@import '../../scss/_variables.scss';
+.Testimonials{
+    padding: 30px;
+    text-align: center;
+}
+
+.testimonialSlide{
+    background: $VaryLightGray;
+    padding: $elementY 30px;
+    position: relative;
+    padding-top: 60px;
+    img{
+        position: absolute;
+        top:0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        height: 100px;
+        width: 100px;
+    }
+}
+.testimonialSlideContainer{
+    padding: 100px 20px 0 0;
+}
