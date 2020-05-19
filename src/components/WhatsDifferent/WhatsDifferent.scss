@@ -1,8 +1,69 @@
 @import '../../scss/_variables.scss';
+
 .WhatsDifferent{
    padding: 0 $mobileGutter;
    text-align: center;
+   position: relative;
+
    p{
        padding: $elementY;
    }
+}
+
+@mixin beforeNumber{
+    background: $BrightRed;
+    color: white;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-right: 30px;
+}
+
+.reason{
+    strong{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        position: relative;
+        &::after{
+            content: '';
+            background: $BrightRed;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            opacity: .1;
+            right:0;
+            left: 10px;
+            transform: translateX(40px)
+        }
+    }
+}
+
+.reasonOne{
+    strong{
+        &::before{
+            content: '01';
+            @include beforeNumber;
+        }
+    }
+}
+
+.reasonTwo{
+    strong{
+        &::before{
+            content: '02';
+            @include beforeNumber;
+        }
+    }
+}
+.reasonThree{
+    strong{
+        &::before{
+            content: '03';
+            @include beforeNumber;
+        }
+    }
 }

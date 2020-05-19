@@ -4,6 +4,7 @@
     padding-top: calc(#{$sectionY} * 2);
     text-align: center;
     position: relative;
+    overflow: hidden;
     p{
         padding: $elementY 40px;
     }
@@ -17,7 +18,7 @@
 }
 .Hero__backgroundBottom{
     position: absolute;
-    bottom:-50px;
-    right: -60%;
+    bottom:20px;
+    right: -70%;
     z-index: -1;
 }
