@@ -1,0 +1,8 @@
+@import '../../scss/_variables.scss';
+.WhatsDifferent{
+   padding: 0 $mobileGutter;
+   text-align: center;
+   p{
+       padding: $elementY;
+   }
+}

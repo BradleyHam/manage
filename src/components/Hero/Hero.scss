@@ -1,0 +1,23 @@
+@import '../../scss/_variables.scss';
+.Hero{
+    padding: $sectionY $mobileGutter;
+    padding-top: calc(#{$sectionY} * 2);
+    text-align: center;
+    position: relative;
+    p{
+        padding: $elementY 40px;
+    }
+}
+
+.Hero__background{
+    position: absolute;
+    top:-120px;
+    right: -120px;
+    z-index: -1;
+}
+.Hero__backgroundBottom{
+    position: absolute;
+    bottom:-50px;
+    right: -60%;
+    z-index: -1;
+}

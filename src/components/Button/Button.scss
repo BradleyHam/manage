@@ -1,0 +1,13 @@
+@import '../../scss/_variables.scss';
+.Button{
+    background: $BrightRed;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 25px;
+    font-weight: bold;
+    box-shadow: 0 13px 10px -9px rgba(0,0,0,.2);
+    font-size: 14px;
+
+}
