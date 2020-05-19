@@ -4,6 +4,7 @@ import Hero from './Hero/Hero'
 import WhatsDifferent from './WhatsDifferent/WhatsDifferent'
 import Testimonials from './Testimonials/Testimonials'
 import Simplify from './Simplify/Simplify'
+import Footer from './Footer/Footer'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <WhatsDifferent />
       <Testimonials />
       <Simplify />
+      <Footer />
     </div>
   );
 }
