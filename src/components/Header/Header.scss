@@ -1,9 +1,6 @@
 @import '../../scss/_variables.scss';
 .Header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
+     height: 80px;
     position: fixed;
     top:0;
     left: 0;
@@ -14,6 +11,9 @@
 
 .hamburger{
     cursor: pointer;
+    @media (min-width: 950px){
+        display: none;
+    }
 }
 
 .mobileNav{
@@ -46,4 +46,31 @@
        margin-left: 20px;
        
     }
+}
+.mobileHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    @media (min-width: 950px){
+        display: none;
+    }
+}
+
+.desktopNav{
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    align-items:center;
+    height: 100%;
+    li{
+        padding: 0 10px;
+    }
+    @media (min-width: 950px){
+        display: flex;
+    }
+}
+
+.HeaderActive{
+    background: white;
 }

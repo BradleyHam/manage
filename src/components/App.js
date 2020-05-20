@@ -6,13 +6,23 @@ import Testimonials from './Testimonials/Testimonials'
 import Simplify from './Simplify/Simplify'
 import Footer from './Footer/Footer'
 
+import { useInView } from 'react-intersection-observer'
+
 
 function App() {
+
+  const [ref, inView, entry] = useInView({
+    /* Optional options */
+    threshold: 0,
+  })
+  console.log(entry)
+
+
   return (
     <div className="App">
-      <Header />
+      <Header intersecting={inView} />
       <Hero />
-      <WhatsDifferent />
+      <WhatsDifferent ref={ref} />
       <Testimonials />
       <Simplify />
       <Footer />
