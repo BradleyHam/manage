@@ -4,9 +4,12 @@
    padding: 0 $mobileGutter;
    text-align: center;
    position: relative;
-
    p{
        padding: $elementY;
+   }
+   @media(min-width: 950px){
+       display: flex;
+       padding: 0 $desktopGutter;
    }
 }
 
@@ -37,7 +40,10 @@
             opacity: .1;
             right:0;
             left: 10px;
-            transform: translateX(40px)
+            transform: translateX(40px);
+            @media(min-width: 950px){
+                display: none;
+            }
         }
     }
 }
@@ -65,5 +71,20 @@
             content: '03';
             @include beforeNumber;
         }
+    }
+}
+
+.WhatsDifferent__leftSide{
+    @media(min-width: 950px){
+        text-align: left;
+        p{
+            padding-left: 0;
+        }
+    }
+}
+.WhatsDifferent__rightSide{
+    @media(min-width: 950px){
+        text-align: left;
+       padding-left: 40px;
     }
 }

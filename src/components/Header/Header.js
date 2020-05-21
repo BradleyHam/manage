@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Header.scss'
 import MobileNav from './MobileNav'
 import DesktopNav from './DesktopNav'
@@ -8,10 +8,12 @@ import Button from '../Button/Button'
 const Header = (props) => {
     let [active, setActive] = useState(false);
 
+    let header = useRef(null)
+
 
     return (
         <div>
-            <div className={props.intersecting ? 'Header HeaderActive' : 'Header'}>
+            <div className={`Header`}>
 
                 {/*-------- mobile header */}
 

@@ -15,7 +15,7 @@ function App() {
     /* Optional options */
     threshold: 0,
   })
-  console.log(entry)
+
 
 
   return (

@@ -1,15 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Slider from 'infinite-react-carousel'
 import './Testimonials.scss'
 
 
 const Testimonials = () => {
+    const [slidesAmount, setSlidesAmount] = useState(window.innerWidth > 930 ? 3 : 1);
+
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 930) {
+                setSlidesAmount(3)
+            } else {
+                setSlidesAmount(1)
+            }
+        })
+    }, [])
+
     return (
         <div className='Testimonials'>
             <h1>What they've said</h1>
-            import Slider from 'infinite-react-carousel';
 
-                <Slider dots arrows={false} autoplay={true}>
+            <Slider dots arrows={false} autoplay={true} slidesToShow={slidesAmount}>
                 <div className='testimonialSlideContainer'>
                     <div className='testimonialOne testimonialSlide'>
                         <img src={require('../../images/avatar-ali.png')} alt="" />
