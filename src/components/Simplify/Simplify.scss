@@ -6,6 +6,7 @@
     padding: $sectionY $mobileGutter;
     text-align: center;
     position: relative;
+    overflow: hidden;
     button{
         padding: 15px 25px;
         background: white;
@@ -18,7 +19,35 @@
     }
     img{
         position: absolute;
+    }
+    &__mobileImage{
         left: 0;
-        bottom: 20px;
+        bottom: 0;
+        @media(min-width: 930px){
+            display: none;
+        }
+    }
+    &__desktopImage{
+        display: none;
+        @media(min-width: 930px){
+            display: initial;
+        }
+    }
+
+
+    
+
+
+    @media(min-width: 950px){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $sectionY $desktopGutter;
+        h1{
+            width: 45%;
+            font-size: 34px;
+            text-align: left;
+            line-height: 1.2;
+         }
     }
 }
