@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/manage/static/css/main.c07743bf.chunk.css",
+    "main.js": "/manage/static/js/main.f56e9c57.chunk.js",
+    "main.js.map": "/manage/static/js/main.f56e9c57.chunk.js.map",
+    "runtime-main.js": "/manage/static/js/runtime-main.5e75f522.js",
+    "runtime-main.js.map": "/manage/static/js/runtime-main.5e75f522.js.map",
+    "static/css/2.05a0ae32.chunk.css": "/manage/static/css/2.05a0ae32.chunk.css",
+    "static/js/2.8798d5ea.chunk.js": "/manage/static/js/2.8798d5ea.chunk.js",
+    "static/js/2.8798d5ea.chunk.js.map": "/manage/static/js/2.8798d5ea.chunk.js.map",
+    "index.html": "/manage/index.html",
+    "precache-manifest.3f711c5cb4719620ecdc95293aff1db4.js": "/manage/precache-manifest.3f711c5cb4719620ecdc95293aff1db4.js",
+    "service-worker.js": "/manage/service-worker.js",
+    "static/css/2.05a0ae32.chunk.css.map": "/manage/static/css/2.05a0ae32.chunk.css.map",
+    "static/css/main.c07743bf.chunk.css.map": "/manage/static/css/main.c07743bf.chunk.css.map",
+    "static/js/2.8798d5ea.chunk.js.LICENSE.txt": "/manage/static/js/2.8798d5ea.chunk.js.LICENSE.txt",
+    "static/media/avatar-ali.png": "/manage/static/media/avatar-ali.d022b688.png",
+    "static/media/avatar-anisha.png": "/manage/static/media/avatar-anisha.d591dc60.png",
+    "static/media/avatar-richard.png": "/manage/static/media/avatar-richard.a2c4b430.png",
+    "static/media/avatar-shanai.png": "/manage/static/media/avatar-shanai.b2507cb2.png",
+    "static/media/bg-simplify-section-desktop.svg": "/manage/static/media/bg-simplify-section-desktop.d6d0cb36.svg",
+    "static/media/bg-simplify-section-mobile.svg": "/manage/static/media/bg-simplify-section-mobile.37dc0372.svg",
+    "static/media/bg-tablet-pattern.svg": "/manage/static/media/bg-tablet-pattern.01061791.svg",
+    "static/media/icon-close.svg": "/manage/static/media/icon-close.57a86b4f.svg",
+    "static/media/icon-hamburger.svg": "/manage/static/media/icon-hamburger.bdd40cf9.svg",
+    "static/media/illustration-intro.svg": "/manage/static/media/illustration-intro.6a53bba8.svg",
+    "static/media/logo.svg": "/manage/static/media/logo.f2cec4b2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5e75f522.js",
+    "static/css/2.05a0ae32.chunk.css",
+    "static/js/2.8798d5ea.chunk.js",
+    "static/css/main.c07743bf.chunk.css",
+    "static/js/main.f56e9c57.chunk.js"
+  ]
+}
