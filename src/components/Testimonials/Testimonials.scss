@@ -1,7 +1,10 @@
 @import '../../scss/_variables.scss';
 .Testimonials{
-    padding: 30px;
+    padding: 100px 30px 150px 30px ;
     text-align: center;
+    @media(min-width: 950px){
+        padding: 100px 0 150px  ;
+    }
 }
 
 .testimonialSlide{ 
@@ -18,9 +21,11 @@
         height: 100px;
         width: 100px;
     }
+ 
 }
 
 .testimonialSlideContainer{
-    padding: 100px 20px 0 0;
+    padding: 100px 20px 0 20px;
+  
 }
 

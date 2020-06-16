@@ -7,6 +7,12 @@
     flex-flow: column;
     align-items: center;
 
+    @media(min-width: 950px){
+        flex-flow: row;
+        align-items: flex-start;
+    }
+   
+
     form{
         display: flex;
         width: 100%;
@@ -18,31 +24,63 @@
             margin-right: 10px;
             padding-left: 30px;
         }
+
+        @media(min-width: 950px){
+            order: 2;
+            flex: 1;
+        }
     }
 
+  
+
+    &__logoAndSocial{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        @media(min-width: 950px){
+           order: -1;
+           flex: 1;
+        }
+    }
 }
 
 .footerNav{
     padding:$elementY;
     width: 100%;
-  
+   padding-top: 0;
+
     ul{
-        height: 150px;
+        height: 170px;
         display: flex;
         flex-flow: column wrap;
         align-content: space-around;
     
         li{
             margin: 5px 0;
+            &:hover{
+                color: $BrightRed;
+                cursor: pointer;
+            }
         }
     }
+
+    @media(min-width: 950px){
+        flex: 1;
+     }
 }
 
 .social{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    @media(min-width: 950px){
+       justify-content: center;
+     }
+    
     svg{
-        margin: 40px 0 ;
+        margin: 40px 10px ;
+        &:hover{
+            color: $BrightRed;
+            cursor: pointer;
+        }
     }
 }
